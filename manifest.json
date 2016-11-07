@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Copy Tabs URL",
+    "version": "1.0",
+
+    "description": "Copy URLs to Clipboard",
+
+    "browser_action": {
+        "default_title": "Copy URLs",
+        "default_popup": "popup.html"
+    },
+
+    "author": "Masato Yamazaki <mas9612@gmail.com>",
+
+    "permissions": [
+        "clipboardWrite",
+        "tabs"
+    ]
+}
