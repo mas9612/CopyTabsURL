@@ -7,7 +7,7 @@ function getUrlsInCurrentWindow(callback) {
     chrome.tabs.query(queryInfo, function (tabs) {
         for (var i = 0; i < tabs.length; i++) {
             urls += tabs[i].url;
-            if (i !== tabs.length - 1) {
+            if (i < tabs.length - 1) {
                 urls += '\n';
             }
         }
